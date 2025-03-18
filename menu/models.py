@@ -17,4 +17,4 @@ class MenuItem(models.Model):
     is_available = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.name
+        return f"{self.name} - £{self.price:.2f}"
