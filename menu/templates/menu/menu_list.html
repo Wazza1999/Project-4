@@ -19,8 +19,9 @@
             <ul>
                 {% for item in menu.items.all %}
                 <li>
-                    {{ item.name }} {{ item.description }} (£{{ item.price }})
+                    {{ item.name }} (£{{ item.price }})
                 </li>
+                <li>{{ item.description }}</li>
                 {% endfor %}
             </ul>
         </li>
