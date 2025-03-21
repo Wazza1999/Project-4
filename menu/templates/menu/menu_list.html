@@ -9,12 +9,23 @@
 </head>
 
 <body>
-    <h1>A la Carte</h1>
-    {% for menu in object_list %}
-    <h2>{{menu.name}}</h2>
-    <p>{{menu.description}}</p>
-    <p>{{items.name}}</p>
-    {% endfor %}
+    <h1>Menu</h1>
+    <ul>
+        {% for menu in menus %}
+        <li>
+            <h2>{{ menu.name }}</h2>
+            <p>{{ menu.description }}</p>
+            <h3>Items:</h3>
+            <ul>
+                {% for item in menu.items.all %}
+                <li>
+                    {{ item.name }} {{ item.description }} (£{{ item.price }})
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
 </body>
 
 </html>
