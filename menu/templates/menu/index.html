@@ -1,35 +1,6 @@
-{% url 'home' as home_url %}
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html class="h-100" lang="en">
+{% block content %}
 
-<head>
-    <title>Warrens Kitchen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Google Fonts CSS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-</head>
-<body>
-    <header>
-        <h1><b>Warrens Kitchen</b></h1>
-        <p>Menu</p>
-        <p>Book a table</p>
-        <p>Reviews</p>
-    </header>
-    <main>
-        <h1><b>main</b></h1>
-    </main>
-    <footer>
-        <h1><b>Contact Us</b></h1>
-    </footer>
-</body>
+{% endblock %}
